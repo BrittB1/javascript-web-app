@@ -73,3 +73,10 @@ body {
 
 .search-button:hover, .favorites-button:hover {filter: brightness(1.05);}
 .status {text-align: center; min-height: 1.5rem; color:#1e395b; margin: 0.5rem 0;}
+
+.gallery {
+    display: grid;
+    /* fr: grid-specific unit of measurement. more flexible than a fixed pixel count */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
