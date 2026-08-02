@@ -18,6 +18,14 @@ body {
     font-family: "Segoe UI", Frutiger, "Helvetica Neue", sans-serif;
 }
 
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
 .app-header{
     text-align: center;
     color: #12324f;
