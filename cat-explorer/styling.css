@@ -80,3 +80,11 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
 }
+
+.card {
+  position: relative;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(124,156,189,0.5);
+  border-radius: 16px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
