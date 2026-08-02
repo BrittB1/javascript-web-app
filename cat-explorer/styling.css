@@ -102,3 +102,32 @@ body {
     text-align: center;
     color: #1e395b;
 }
+
+.fav-btn {
+  position: absolute; top: 8px; right: 8px;
+  width: 44px; height: 44px; padding: 0;
+  border: none; border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  cursor: pointer; display: grid; place-items: center;
+  transition: transform 0.1s ease;
+}
+
+fav-btn:hover {
+    transform: scale(1.1);
+}
+
+.fav-btn img {
+    width: 28px;
+    height: 28px;
+    filter: grayscale(0.8) opacity(0.6);
+}
+
+.fav-btn.is-favorite img {
+    filter: none;
+}
+
+.fav-btn:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
