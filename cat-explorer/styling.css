@@ -31,7 +31,7 @@ body {
     color: #12324f;
     margin-bottom: 1rem;
     /* rgba: makes a color from red green blue values. lets transparency property be isolated to a specific color */
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
 }
 .app-header h1 {font-size: 2.4rem; margin:0;}
 .tagline {margin: 0.25rem 0 0; color:#1e395b;}
@@ -39,12 +39,12 @@ body {
 .panel{
     width: 100%;
     max-width: 1000px;
-    background:rgba(255, 255, 255, 0);
-    backdrop-filter: blur (6px);
+    background:rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     padding: 1.25rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .search-form {display: flex; gap: 0.5rem;}
@@ -103,7 +103,7 @@ body {
     color: #1e395b;
 }
 
-.fav-btn {
+.fav-button {
   position: absolute; top: 8px; right: 8px;
   width: 44px; height: 44px; padding: 0;
   border: none; border-radius: 50%;
@@ -113,21 +113,21 @@ body {
   transition: transform 0.1s ease;
 }
 
-fav-btn:hover {
+.fav-button:hover {
     transform: scale(1.1);
 }
 
-.fav-btn img {
+.fav-button img {
     width: 28px;
     height: 28px;
     filter: grayscale(0.8) opacity(0.6);
 }
 
-.fav-btn.is-favorite img {
+.fav-button.is-favorite img {
     filter: none;
 }
 
-.fav-btn:disabled {
+.fav-button:disabled {
     cursor: default;
     opacity: 0.6;
 }
